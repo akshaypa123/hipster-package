@@ -1,0 +1,28 @@
+{
+  "name": "acme/user-discounts",
+  "description": "A reusable Laravel package for user-level discounts",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Acme\\UserDiscounts\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Acme\\UserDiscounts\\UserDiscountsServiceProvider"
+      ],
+      "aliases": {
+        "UserDiscounts": "Acme\\UserDiscounts\\Facades\\UserDiscounts"
+      }
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^10.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.0"
+  }
+}
