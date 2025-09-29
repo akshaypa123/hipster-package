@@ -1,28 +1,72 @@
 {
-  "name": "acme/user-discounts",
-  "description": "A reusable Laravel package for user-level discounts",
-  "type": "library",
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "Acme\\UserDiscounts\\": "src/"
+    "name": "vendor/packages",
+    "description": "User-level discount management package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\UserDiscounts\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^10.0",
+        "illuminate/database": "^10.0",
+        "illuminate/events": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\UserDiscounts\\DiscountServiceProvider"
+            ]
+        }
     }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Acme\\UserDiscounts\\UserDiscountsServiceProvider"
-      ],
-      "aliases": {
-        "UserDiscounts": "Acme\\UserDiscounts\\Facades\\UserDiscounts"
-      }
+}
+{
+    "name": "vendor/user-discounts",
+    "description": "User-level discount management package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\UserDiscounts\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^10.0",
+        "illuminate/database": "^10.0",
+        "illuminate/events": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\UserDiscounts\\DiscountServiceProvider"
+            ]
+        }
     }
-  },
-  "require": {
-    "php": ">=8.0",
-    "illuminate/support": "^10.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^8.0"
-  }
+}
+{
+    "name": "vendor/user-discounts",
+    "description": "User-level discount management package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\UserDiscounts\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^10.0",
+        "illuminate/database": "^10.0",
+        "illuminate/events": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\UserDiscounts\\DiscountServiceProvider"
+            ]
+        }
+    }
 }
